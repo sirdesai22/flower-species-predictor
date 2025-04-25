@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Flower Prediction</title>
+</head>
+
+<body>
+    <h2>Iris Flower Prediction</h2>
+    <form action="/" method="post">
+        Sepal Length: <input name="sl" placeholder="5.1"><br>
+        Sepal Width: <input name="sw" placeholder="3.5"><br>
+        Petal Length: <input name="pl" placeholder="1.4"><br>
+        Petal Width: <input name="pw" placeholder="0.2"><br>
+        <input type="submit">
+    </form>
+    {% if species %}
+    <h2>Predicted species: {{ species }}</h2>
+    {% endif %}
+</body>
+
+</html>
